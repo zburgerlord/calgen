@@ -34,11 +34,13 @@ input {
 }
 
 .inputs {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 33%;
+
 }
 
 input, label {
