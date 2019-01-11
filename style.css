@@ -15,7 +15,6 @@ div {
 
 p {
   font-size: 1.5rem;
-  text-align: center;
 
 }
 
@@ -33,9 +32,6 @@ input {
   clear: left;
 
 
-}
-.inputs {
-  text-align: center;
 }
 
 input, label {
