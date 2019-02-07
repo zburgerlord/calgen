@@ -11,6 +11,8 @@ var month = ["January", "February", "March", "April", "May", "June", "July", "Au
 
 function mwSched() {
 
+  //get the dates and blank out the table (in case they are doing more than one without refreshing the page)
+  document.getElementById("docx").innerHTML = "";
   var semStart = document.getElementById("semStartDate").valueAsDate;
   var semEnd = document.getElementById("semEndDate").valueAsDate;
 
@@ -196,6 +198,8 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
 
 function trSched() {
 
+  //get the dates and blank out the table (in case they are doing more than one without refreshing the page)
+  document.getElementById("docx").innerHTML = "";
   var semStart = document.getElementById("semStartDate").valueAsDate;
   var semEnd = document.getElementById("semEndDate").valueAsDate;
 
@@ -382,6 +386,8 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
 
 function friSched() {
 
+  //get the dates and blank out the table (in case they are doing more than one without refreshing the page)
+  document.getElementById("docx").innerHTML = "";
   var semStart = document.getElementById("semStartDate").valueAsDate;
   var semEnd = document.getElementById("semEndDate").valueAsDate;
 
@@ -520,6 +526,9 @@ console.log(Math.ceil(prinRays.length) + " weeks");
 
 
 function satSched() {
+
+  //get the dates and blank out the table (in case they are doing more than one without refreshing the page)
+  document.getElementById("docx").innerHTML = "";
   var semStart = document.getElementById("semStartDate").valueAsDate;
   var semEnd = document.getElementById("semEndDate").valueAsDate;
 
