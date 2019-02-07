@@ -14,7 +14,7 @@ div {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.01rem;
 
 }
 
@@ -24,7 +24,7 @@ p {
 
 label {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 }
 
@@ -63,7 +63,7 @@ button {
     color: white;
     border: 1px solid #272932;
     padding: 0.75rem 1.4rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     cursor: pointer;
     opacity: 0.7;
     transition: 0.5s;

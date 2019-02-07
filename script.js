@@ -52,7 +52,7 @@ function mwSched() {
   var prinRays = datRays.filter(pullDays);
 
 
-console.log(Math.ceil(prinRays.length/2) + " weeks");
+//console.log(Math.ceil(prinRays.length/2) + " weeks");
 
 
 
@@ -66,7 +66,8 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
   var firsRow = document.createElement("tr");
 
 
-  //create first row (headings) and add the text and set scope (for accessibility)
+  //create first row (headings) and add the text and set scope (for accessibility); also create blank line before table
+  var blankLine = document.createElement("br");
   var firsCell1 = document.createElement("th");
   firsCell1.classList.add("row-primo");
   firsCell1.setAttribute("scope", "col");
@@ -80,7 +81,7 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
   var firsrowText2 = document.createTextNode("Class 1");
   var firsrowText3 = document.createTextNode("Class 2");
 
-
+  docxDiv.appendChild(blankLine);
   docxDiv.appendChild(newTab);
   newTab.appendChild(firsRow);
   firsRow.appendChild(firsCell1);
@@ -179,7 +180,7 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
      type: 'application/msword'
    });
    url = URL.createObjectURL(blob);
-   link = document.createElement('A');
+   link = document.createElement('a');
    link.href = url;
    // Set default file name.
    // Word will append file extension - do not add an extension here.
@@ -254,7 +255,8 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
   var firsRow = document.createElement("tr");
 
 
-  //create first row (headings) and add the text and set scope (for accessibility)
+  //create first row (headings) and add the text and set scope (for accessibility); also create blank line before table
+  var blankLine = document.createElement("br");
   var firsCell1 = document.createElement("th");
   firsCell1.classList.add("row-primo");
   firsCell1.setAttribute("scope", "col");
@@ -269,6 +271,7 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
   var firsrowText3 = document.createTextNode("Class 2");
 
 
+  docxDiv.appendChild(blankLine);
   docxDiv.appendChild(newTab);
   newTab.appendChild(firsRow);
   firsRow.appendChild(firsCell1);
@@ -367,7 +370,7 @@ console.log(Math.ceil(prinRays.length/2) + " weeks");
      type: 'application/msword'
    });
    url = URL.createObjectURL(blob);
-   link = document.createElement('A');
+   link = document.createElement('a');
    link.href = url;
    // Set default file name.
    // Word will append file extension - do not add an extension here.
@@ -441,8 +444,9 @@ console.log(Math.ceil(prinRays.length) + " weeks");
   var firsRow = document.createElement("tr");
 
 
-  //create first row (headings) and add the text and set scope (for accessibility)
-  var firsCell1 = document.createElement("th");
+  //create first row (headings) and add the text and set scope (for accessibility); also create blank line before table
+  var blankLine = document.createElement("br");
+  var firsCell1 = document.createElement("th");;
   firsCell1.classList.add("row-primo");
   firsCell1.setAttribute("scope", "col");
   var firsCell2 = document.createElement("th");
@@ -453,7 +457,7 @@ console.log(Math.ceil(prinRays.length) + " weeks");
   var firsrowText2 = document.createTextNode("Class meeting");
 
 
-
+  docxDiv.appendChild(blankLine);
   docxDiv.appendChild(newTab);
   newTab.appendChild(firsRow);
   firsRow.appendChild(firsCell1);
@@ -508,7 +512,7 @@ console.log(Math.ceil(prinRays.length) + " weeks");
      type: 'application/msword'
    });
    url = URL.createObjectURL(blob);
-   link = document.createElement('A');
+   link = document.createElement('a');
    link.href = url;
    // Set default file name.
    // Word will append file extension - do not add an extension here.
@@ -568,7 +572,7 @@ function satSched() {
   var prinRays = datRays.filter(pullDays);
 
 
-console.log(Math.ceil(prinRays.length) + " weeks");
+//console.log(Math.ceil(prinRays.length) + " weeks");
 
 
 
@@ -582,7 +586,8 @@ console.log(Math.ceil(prinRays.length) + " weeks");
   var firsRow = document.createElement("tr");
 
 
-  //create first row (headings) and add the text and set scope (for accessibility)
+  //create first row (headings) and add the text and set scope (for accessibility); also create blank line before table
+  var blankLine = document.createElement("br");
   var firsCell1 = document.createElement("th");
   firsCell1.classList.add("row-primo");
   firsCell1.setAttribute("scope", "col");
@@ -594,7 +599,7 @@ console.log(Math.ceil(prinRays.length) + " weeks");
   var firsrowText2 = document.createTextNode("Class meeting");
 
 
-
+  docxDiv.appendChild(blankLine);
   docxDiv.appendChild(newTab);
   newTab.appendChild(firsRow);
   firsRow.appendChild(firsCell1);
@@ -634,6 +639,7 @@ console.log(Math.ceil(prinRays.length) + " weeks");
     week++
   }
 
+
 //make table into Word doc
   var html, link, blob, url, css;
   css = (
@@ -649,7 +655,7 @@ console.log(Math.ceil(prinRays.length) + " weeks");
      type: 'application/msword'
    });
    url = URL.createObjectURL(blob);
-   link = document.createElement('A');
+   link = document.createElement('a');
    link.href = url;
    // Set default file name.
    // Word will append file extension - do not add an extension here.
