@@ -7,9 +7,15 @@ h1{
   text-align: center;
 
 }
-div {
+
+body {
+
   background: #828489;
-  height: auto;
+
+}
+
+div {
+
   width: 100%
 }
 
@@ -17,6 +23,7 @@ p {
   font-size: 1.01rem;
 
 }
+
 
 .warning {
   font-weight: bold;
